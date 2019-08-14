@@ -31,18 +31,18 @@ export class AdvanceReviewPage implements OnInit {
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create(
       {
-      header: 'You have finished the basic review.',
+      header: 'You have finished the advanced review.',
       buttons: [{
         text: 'Home',
         icon: 'planet',
         handler: () => {
-          this.router.navigate(['home/tabs/basic']);
+          this.router.navigate(['home/tabs/advanced']);
         }
       }, {
         text: 'Quiz Page',
         icon: 'clipboard',
         handler: () => {
-          this.router.navigate(['home/tabs/basic/quiz']);
+          this.router.navigate(['home/tabs/advanced/quiz']);
         }
       }],
       backdropDismiss: false,
