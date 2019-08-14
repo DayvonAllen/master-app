@@ -14,13 +14,22 @@ export class DataService {
     incorrectRo: [],
     incorrectHiragana: [],
     count: 0
-  }]
+  }];
+  advancedResults = [{
+    correct: 0,
+    incorrect: 0,
+    incorrectRo: [],
+    incorrectHiragana: [],
+    count: 0
+  }];
 
   getAllData(){
     return this.http.get("http://localhost:3000/basic")
   }
   
-
+  getAdvancedResults(){
+    return this.advancedResults;
+  }
   getResults(){
     return this.results;
   }

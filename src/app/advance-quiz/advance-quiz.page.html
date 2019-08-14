@@ -1,9 +1,9 @@
 <ion-header>
   <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
-      <ion-back-button [routerLink]="['/home/tabs/advanced']"></ion-back-button>
+      <ion-back-button [defaultHref]="['/home/tabs/advanced']"></ion-back-button>
     </ion-buttons>
-    <ion-title>Advance Quiz</ion-title>
+    <ion-title>Quiz</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,7 +11,7 @@
   <ion-content>
     <ion-item lines="full" text-center class="ion-margin-top">
       <ion-label color="light">
-        <h1 id="title">Advanced Hiragana Quiz</h1>
+        <h1 id="title">Advanced Quiz</h1>
       </ion-label>
     </ion-item>
     <ion-grid>
@@ -21,7 +21,7 @@
             <ion-avatar slot="start">
               <img src="../../assets/ga.png">
             </ion-avatar>
-            <ion-button class="but" color="light" routerLink="/home/tabs/advanced/quiz/ga">
+            <ion-button class="but" color="light" [routerLink]='["/home/tabs/advanced/quiz/ga"]'>
               <ion-text color="tertiary">
                 がーご
               </ion-text>

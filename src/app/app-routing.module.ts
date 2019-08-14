@@ -36,6 +36,7 @@ const routes: Routes = [
   { path: 'pya-quiz', loadChildren: './pya-quiz/pya-quiz.module#PyaQuizPageModule' },
   { path: 'mya-quiz', loadChildren: './mya-quiz/mya-quiz.module#MyaQuizPageModule' },
   { path: 'rya-quiz', loadChildren: './rya-quiz/rya-quiz.module#RyaQuizPageModule' },
+  { path: 'advanced-results', loadChildren: './advanced-results/advanced-results.module#AdvancedResultsPageModule' },
 ];
 
 @NgModule({

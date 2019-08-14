@@ -253,6 +253,11 @@ const routes: Routes = [
               "../cha-quiz/cha-quiz.module#ChaQuizPageModule"
           },
           {
+            path: "quiz/ja",
+            loadChildren:
+              "../ja-quiz/ja-quiz.module#JaQuizPageModule"
+          },
+          {
             path: "quiz/nya",
             loadChildren:
               "../nya-quiz/nya-quiz.module#NyaQuizPageModule"
@@ -291,6 +296,11 @@ const routes: Routes = [
             path: "review",
             loadChildren:
               "../advance-review/advance-review.module#AdvanceReviewPageModule"
+          },
+          {
+            path: "result",
+            loadChildren:
+              "../advanced-results/advanced-results.module#AdvancedResultsPageModule"
           },
           {
             path: "quiz",
