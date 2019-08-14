@@ -1,6 +1,7 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:400&display=swap');
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -74,4 +75,15 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+
+  --ion-background-color: #29AAC0;
+  --ion-font-family: 'Raleway';
+}
+
+@font-face{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://fonts.googleapis.com/css?family=Raleway:400&display=swap');
 }
