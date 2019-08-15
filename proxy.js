@@ -1,7 +1,7 @@
 var HttpsProxyAgent = require('https-proxy-agent');
 var proxyConfig = [{
   context: '/api',
-  target: 'http://localhost:3000',
+  target: 'https://hiragana-api.herokuapp.com/',
   secure: false
 }];
  

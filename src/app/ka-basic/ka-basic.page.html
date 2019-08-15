@@ -15,7 +15,8 @@
         <h1>ka-ko</h1>
       </ion-label>
     </ion-item>
-    <ion-card color="light" class="card" [ngClass]="{'frontCard': front, 'backCard': !front}" *ngFor="let char of list">
+    <ng-container *ngIf="loaded; else loading">  
+      <ion-card color="light" class="card" [ngClass]="{'frontCard': front, 'backCard': !front}" *ngFor="let char of list">
       <div class="front" [ngClass]="{'frontFlip': front}" (click)="flip()">
         <div>
           <h1 id="romaji">{{char.romanji}}</h1>
@@ -63,4 +64,8 @@
         </ion-label>
       </div>
     </ion-card>
+    </ng-container>
+    <ng-template #loading>
+      <ion-spinner color="light" name="crescent"></ion-spinner>
+    </ng-template>
   </ion-content>
