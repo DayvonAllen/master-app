@@ -30,7 +30,7 @@ export class KaBasicPage implements OnInit {
   }
   playSound(){
     this.front = null;
-    this.snd = new Audio(`https://hiragana-api.herokuapp.com/sounds/${this.list[0]['romanji']}`)
+    this.snd = new Audio(`localhost${this.list[0]['romanji']}`)
     this.snd.play()
   }
 
