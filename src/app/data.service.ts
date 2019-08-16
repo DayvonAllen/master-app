@@ -24,7 +24,7 @@ export class DataService {
   }];
 
   getAllData(){
-    return this.http.get("https://hiragana-api.herokuapp.com/basic")
+    return this.http.get("localhost")
   }
   
   getAdvancedResults(){
